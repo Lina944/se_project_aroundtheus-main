@@ -177,8 +177,9 @@
   }
 
   .modal__save-button {
+    margin-top: 45px;
     line-height: 17px;
     font-size: 14px;
-    margin-top: 45px;
+  
   }
 }

@@ -82,17 +82,16 @@
   }
 
   .profile__title {
+    line-height: 27px;
     max-width: 200px;
     font-size: 22px;
-    line-height: 27px;
+
   }
 
   .profile__info {
     grid-template-columns: minmax(auto, 214px) auto;
   }
 }
-
-
 
 @media screen and (max-width: 581px) {
   .profile {
@@ -110,11 +109,11 @@
 
   .profile__description {
     width: 100%;
+    margin-top: 14px;
+    margin-bottom: 36px;
     text-align: center;
     font-size: 14px;
     line-height: 17px;
-    margin-top: 14px;
-    margin-bottom: 36px;
   }
 
   .profile__add-button {
