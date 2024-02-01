@@ -1,0 +1,37 @@
+.header__title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  margin-top: 45px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.7);
+  margin-bottom: 36px;
+  padding-bottom: 41px;
+  max-width: 880px;
+  width: 100%;
+}
+
+.header__logo {
+  width: 173px;
+  height: 33px;
+}
+
+@media screen and (max-width: 920px) {
+  .header {
+    max-width: 581px;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .header {
+    padding-bottom: 32px;
+    margin-bottom: 38px;
+    margin-top: 28px;
+  }
+
+  .header__logo {
+    width: 126px;
+    height: 24px;
+    padding-left: 27px;
+  }
+}
