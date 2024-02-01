@@ -7,8 +7,8 @@ class Card {
     this._cardElement = this._getCardElement();
     this._cardTitleElement = this._cardElement.querySelector(".card__title");
     this._cardImageElement = this._cardElement.querySelector(".card__image");
-    this._likeIcon = this._cardElement.querySelector(".card__like-button");
-    this._trashIcon = this._cardElement.querySelector(".card__trash-button");
+    this._likeIcon = this._cardElement.querySelector(".like-button");
+    this._trashIcon = this._cardElement.querySelector(".trash-button");
     this._setEventListeners();
   }
 
