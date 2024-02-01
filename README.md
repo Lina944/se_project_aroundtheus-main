@@ -10,4 +10,4 @@ The "Around the U.S." Interactive webpade is the third required project in the S
 - Positioning
 - Grid Layout
 
-Link to the deployed site via GitHub Pages: https://lina944.github.io/se_project_aroundtheus.main-main/
+Link to the deployed site via GitHub Pages: https://lina944.github.io/se_project_aroundtheus.main/
