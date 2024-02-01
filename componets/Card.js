@@ -4,12 +4,6 @@ class Card {
     this.link = link;
     this._cardSelector = cardSelector;
     this._handleImageClick = handleImageClick;
-    this._cardElement = this._getCardElement();
-    this._cardTitleElement = this._cardElement.querySelector(".card__title");
-    this._cardImageElement = this._cardElement.querySelector(".card__image");
-    this._likeIcon = this._cardElement.querySelector(".like-button");
-    this._trashIcon = this._cardElement.querySelector(".trash-button");
-    this._setEventListeners();
   }
 
   _setEventListeners() {
@@ -31,21 +25,22 @@ class Card {
     this._cardElement = null;
   }
 
-  _getCardElement() {
-    return document
+  getView() {
+    this._cardElement = document
       .querySelector(this._cardSelector)
       .content.querySelector(".card")
       .cloneNode(true);
-  }
-
-  getView() {
+    this._cardTitleElement = this._cardElement.querySelector(".card__title");
     this._cardTitleElement.textContent = this.name;
+    this._cardImageElement = this._cardElement.querySelector(".card__image");
     this._cardImageElement.src = this.link;
     this._cardImageElement.alt = this.name;
+    this._likeIcon = this._cardElement.querySelector(".card__like-button");
+    this._trashIcon = this._cardElement.querySelector(".card__trash-button");
+    this._setEventListeners();
 
     return this._cardElement;
   }
 }
 
 export default Card;
-
