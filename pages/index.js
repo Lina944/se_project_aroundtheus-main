@@ -59,7 +59,7 @@ function openPopup(modal) {
 function closePopup(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keyup", handleEsc);
-  // formValidators[].resetValidation();
+ 
 }
 
 const isEscapeEvent = (e, action) => {
